@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ru.rossbery.abstractrecycler">
+    package="ru.rosberry.abstractrecycler">
 
     <application
         android:allowBackup="true"

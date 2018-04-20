@@ -1,4 +1,4 @@
-package ru.rossbery.abstractrecycler
+package ru.rosberry.abstractrecycler
 
 import android.support.annotation.LayoutRes
 
