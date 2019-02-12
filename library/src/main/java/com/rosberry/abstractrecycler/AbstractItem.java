@@ -6,16 +6,15 @@
 
 package com.rosberry.abstractrecycler;
 
-import android.support.annotation.LayoutRes;
-
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Objects;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
 
 /**
  * @author Alexei Korshun on 12/02/2019.
  */
-public class AbstractItem {
+public abstract class AbstractItem {
 
     private final int type;
 
@@ -41,7 +40,7 @@ public class AbstractItem {
         return Objects.hash(type);
     }
 
-    @NotNull
+    @NonNull
     @Override
     public String toString() {
         return "AbstractItem{" +

@@ -6,9 +6,9 @@
 
 package com.rosberry.abstractrecycler;
 
-import android.support.v7.util.DiffUtil;
-
 import java.util.List;
+
+import androidx.recyclerview.widget.DiffUtil;
 
 /**
  * @author Alexei Korshun on 12/02/2019.
