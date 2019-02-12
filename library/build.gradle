@@ -4,6 +4,8 @@ apply from: 'maven-push.gradle'
 
 android {
     compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28
