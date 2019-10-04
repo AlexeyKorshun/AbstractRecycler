@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
@@ -49,5 +50,12 @@ public abstract class AbstractRecyclerAdapter extends RecyclerView.Adapter<Abstr
     @Override
     public int getItemViewType(int position) {
         return items.get(position).getType();
+    }
+
+    public void showItems(List<? extends AbstractItem> newItems) {
+        DiffUtil.Callback callback = new DefaultDiffCallback(items, newItems);
+        DiffUtil.DiffResult result = DiffUtil.calculateDiff(callback);
+        items = newItems;
+        result.dispatchUpdatesTo(this);
     }
 }
