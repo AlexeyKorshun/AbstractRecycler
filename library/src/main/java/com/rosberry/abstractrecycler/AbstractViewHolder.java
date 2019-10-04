@@ -20,6 +20,6 @@ public class AbstractViewHolder<ITEM extends AbstractItem> extends RecyclerView.
         super(itemView);
     }
 
-    protected void bind(ITEM item) {
+    protected void bind(@NonNull ITEM item) {
     }
 }

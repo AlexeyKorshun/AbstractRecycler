@@ -26,7 +26,8 @@ public abstract class AbstractRecyclerAdapter extends RecyclerView.Adapter<Abstr
         this.items = items;
     }
 
-    public abstract AbstractViewHolder<? extends AbstractItem> createHolder(View view, int viewType);
+    @NonNull
+    public abstract AbstractViewHolder<? extends AbstractItem> createHolder(@NonNull View view, int viewType);
 
     @NonNull
     @Override
