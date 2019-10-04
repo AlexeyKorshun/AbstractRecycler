@@ -15,10 +15,10 @@ import androidx.recyclerview.widget.DiffUtil;
  */
 public final class DefaultDiffCallback extends DiffUtil.Callback {
 
-    private final List<AbstractItem> oldItems;
-    private final List<AbstractItem> newItems;
+    private final List<? extends AbstractItem> oldItems;
+    private final List<? extends AbstractItem> newItems;
 
-    public DefaultDiffCallback(List<AbstractItem> oldItems, List<AbstractItem> newItems) {
+    public DefaultDiffCallback(List<? extends AbstractItem> oldItems, List<? extends AbstractItem> newItems) {
         this.oldItems = oldItems;
         this.newItems = newItems;
     }
